@@ -6,7 +6,9 @@
     "build": "webpack --mode development",
     "start": "webpack-dev-server --open --mode development",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "flow": "flow",
+    "flow:coverage": "npm run flow && flow-coverage-report"
   },
   "keywords": [],
   "author": "",
@@ -17,19 +19,42 @@
   },
   "devDependencies": {
     "babel-core": "6.26.3",
+    "babel-eslint": "^8.2.3",
     "babel-loader": "7.1.4",
     "babel-preset-env": "1.7.0",
+    "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "6.24.1",
     "eslint": "4.19.1",
     "eslint-config-airbnb": "16.1.0",
+    "eslint-plugin-flowtype": "^2.47.1",
+    "eslint-plugin-flowtype-errors": "^3.5.1",
     "eslint-plugin-import": "2.12.0",
     "eslint-plugin-jsx-a11y": "6.0.3",
     "eslint-plugin-react": "7.8.2",
+    "flow-bin": "^0.72.0",
+    "flow-coverage-report": "^0.5.0",
+    "flow-webpack-plugin": "^1.2.0",
     "html-loader": "0.5.5",
     "html-webpack-plugin": "3.2.0",
     "react-hot-loader": "4.2.0",
     "webpack": "4.8.3",
     "webpack-cli": "2.1.3",
     "webpack-dev-server": "3.1.4"
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "settings": {
+      "react": {
+        "pragma": "h"
+      }
+    },
+    "plugins": [
+      "flowtype-errors"
+    ],
+    "rules": {
+      "default-case": 0,
+      "flowtype-errors/show-errors": 2,
+      "flowtype-errors/show-warnings": 1
+    }
   }
 }

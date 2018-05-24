@@ -1,0 +1,11 @@
+[include]
+widgets/src/main/javascript/*.(js|jsx)
+widgets/src/main/resources/*.scss
+[ignore]
+.*/test/.*
+<PROJECT_ROOT>/node_modules/*
+<PROJECT_ROOT>/dist/*
+[options]
+module.name_mapper='^player-account-widgets\/\(.*\)$' -> '<PROJECT_ROOT>/widgets/src/main/javascript/\1'
+module.name_mapper='.*\(.scss\)' -> 'empty/object'
+include_warnings=true

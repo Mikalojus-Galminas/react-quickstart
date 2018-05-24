@@ -3,7 +3,7 @@ import SampleComponent from '../components/SampleComponent';
 
 const HomePage = () => (
     <div>
-        <SampleComponent text="123" />
+        <SampleComponent text="Example" />
     </div>
 );
 

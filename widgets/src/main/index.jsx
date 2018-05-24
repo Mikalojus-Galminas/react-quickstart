@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HomePage from './js/pages/HomePage';
+import HomePage from './javascript/pages/HomePage';
 
-const render = (Component) => {
+const render = (Component): string => {
     ReactDOM.render(
         <Component />,
         document.getElementById('app'),
