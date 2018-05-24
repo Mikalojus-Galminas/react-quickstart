@@ -1,14 +1,13 @@
 {
     "presets": [
-      "es2017",
-      "flow", 
-      "react",
-      "react-app",
-      ["env", { "modules": false }]
+        "es2017",
+        "flow",
+        "react",
+        "react-app", 
+        ["env", { "modules": false }]
     ],
     "plugins": [
-      [ "transform-react-jsx"],
-      "transform-object-rest-spread"
+        "transform-react-jsx",
+        "transform-object-rest-spread"
     ]
-  }
-  
+}

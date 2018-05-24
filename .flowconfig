@@ -6,6 +6,6 @@ widgets/src/main/resources/*.scss
 <PROJECT_ROOT>/node_modules/*
 <PROJECT_ROOT>/dist/*
 [options]
-module.name_mapper='^player-account-widgets\/\(.*\)$' -> '<PROJECT_ROOT>/widgets/src/main/javascript/\1'
-module.name_mapper='.*\(.scss\)' -> 'empty/object'
+module.name_mapper='^components\/\(.*\)$' -> '<PROJECT_ROOT>/widgets/src/main/javascript/components/\1'
+module.name_mapper='^components\/\(.*\)$' -> '<PROJECT_ROOT>/widgets/src/main/javascript/pages/\1'
 include_warnings=true

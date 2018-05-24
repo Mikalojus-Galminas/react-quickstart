@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import SampleComponent from '../components/SampleComponent';
+import SampleComponent from '../components/SampleComponent/SampleComponent';
 
 const HomePage = () => (
     <div>
