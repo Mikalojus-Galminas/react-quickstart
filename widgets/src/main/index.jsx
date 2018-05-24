@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import HomePage from './javascript/pages/HomePage';
 
-const render = (Component): string => {
+const render = (Component) => {
     ReactDOM.render(
         <Component />,
         document.getElementById('app'),
